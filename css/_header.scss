@@ -1,0 +1,95 @@
+// header
+
+.header {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/img/background/01.jpg") no-repeat fixed top center / cover;
+  min-height: 800px;
+  .nav {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      width: 110px;
+      cursor: pointer;
+      position: relative;
+    }
+    .nav-menu {
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .menu-item {
+          padding-top: 20px;
+          .menu-link {
+            font-size: 20px;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            &:hover {
+              transition: 0.3s;
+              border-bottom: 2px solid $background-color-main;
+              color: $background-color-main;
+            }
+          }
+          &:last-child {
+            .menu-link {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $background-color-main;
+              border-radius: 100px;
+              transition: 0.5s;
+              border-bottom: 0px;
+              &:hover {
+                transition: 0.5s;
+                background-color: white;
+                color: $background-color-main;
+                border-bottom: 0px;
+                box-shadow: 1px 1px 3px $background-color-main;
+                opacity: 0.9;
+              }
+            }
+          }
+        }
+        .menu-item:not(:last-child) {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+.header {
+  .container-1100 {
+    padding-top: 110px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .site-description-header-text {
+      .title {
+        color: white;
+        font-family: $font-roboto-bold;
+        font-size: 6rem;
+      }
+      .paragraph-wrapper {
+        .paragraph-description {
+          color: white;
+          line-height: 1.7;
+          font-size: 20px;
+          font-weight: 500;
+          font-variant: small-caps;
+          text-transform: capitalize;
+          margin: 20px 0px;
+        }
+      }
+    }
+    .rocket {
+      position: absolute;
+      top: 40%;
+      left: 65%;
+      width: 45%;
+    }
+  }
+}
