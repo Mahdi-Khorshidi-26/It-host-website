@@ -49,9 +49,9 @@ li {
 }
 
 .active {
-  color: #fd5383 !important;
+  color: #EB2B63 !important;
   font-family: "roboto-bold";
-  border-bottom: 2px solid #fd5383;
+  border-bottom: 2px solid #EB2B63;
 }
 
 .btn {
@@ -63,10 +63,10 @@ li {
   outline: 0px;
   box-shadow: 2px 2px 6px black;
   transition: 0.2s;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-inline: 25px;
   color: white;
-  background-color: #fd5383;
+  background-color: #EB2B63;
   font-family: "roboto-bold";
   cursor: pointer;
 }
@@ -136,14 +136,14 @@ li {
 }
 .header .nav .nav-menu .menu .menu-item .menu-link:hover {
   transition: 0.3s;
-  border-bottom: 2px solid #fd5383;
-  color: #fd5383;
+  border-bottom: 2px solid #EB2B63;
+  color: #EB2B63;
 }
 .header .nav .nav-menu .menu .menu-item:last-child .menu-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fd5383;
+  background-color: #EB2B63;
   border-radius: 100px;
   transition: 0.5s;
   border-bottom: 0px;
@@ -151,9 +151,9 @@ li {
 .header .nav .nav-menu .menu .menu-item:last-child .menu-link:hover {
   transition: 0.5s;
   background-color: white;
-  color: #fd5383;
+  color: #EB2B63;
   border-bottom: 0px;
-  box-shadow: 1px 1px 3px #fd5383;
+  box-shadow: 1px 1px 3px #EB2B63;
   opacity: 0.9;
 }
 .header .nav .nav-menu .menu .menu-item:not(:last-child) {
@@ -187,65 +187,65 @@ li {
   width: 45%;
 }
 
-.main .container-1100 .main-top-title {
+.main-top-title {
   padding-top: 50px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
 }
-.main .container-1100 .main-top-title .logo {
+.main-top-title .logo {
   width: 20%;
   padding-left: 90px;
 }
-.main .container-1100 .main-top-title .description .explanation {
+.main-top-title .description .explanation {
   color: #333;
   opacity: 0.7;
   font-family: "roboto-bold";
   padding-bottom: 20px;
   text-align: center;
 }
-.main .container-1100 .main-top-title .description .features {
+.main-top-title .description .features {
   font-size: 55px;
 }
 
-.main .container-1100 .main-top-features {
+.main-top-features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
   align-items: center;
   justify-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
-.main .container-1100 .main-top-features .card-features-active {
+.main-top-features .card-features-active {
   margin-bottom: 55px !important;
 }
-.main .container-1100 .main-top-features .card-features {
+.main-top-features .card-features {
   text-align: center;
   transition: 0.5s;
   cursor: pointer;
   border-bottom: 1px solid transparent;
   padding: 10px;
 }
-.main .container-1100 .main-top-features .card-features:hover {
+.main-top-features .card-features:hover {
   transition: 0.5s;
   opacity: 0.9;
   box-shadow: 1px 1px 5px black;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.main .container-1100 .main-top-features .card-features .icon-features {
+.main-top-features .card-features .icon-features {
   font-size: 30px;
-  background-color: #ff2d69;
+  background-color: #EB2B63;
   padding: 35px;
   border-radius: 50%;
   color: white;
   box-shadow: 1px 1px 4px black;
 }
-.main .container-1100 .main-top-features .card-features .icon-features-active {
+.main-top-features .card-features .icon-features-active {
   font-size: 90px;
 }
-.main .container-1100 .main-top-features .card-features .title-features {
+.main-top-features .card-features .title-features {
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: "roboto-bold";
@@ -253,11 +253,67 @@ li {
   text-transform: capitalize;
   font-variant: small-caps;
 }
-.main .container-1100 .main-top-features .card-features .explanation-features {
+.main-top-features .card-features .explanation-features {
   line-height: 1.7em;
   text-transform: capitalize;
   font-variant: small-caps;
   color: #333;
   opacity: 0.8;
   font-size: 14px;
+}
+
+.main-middle-form {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../assets/img/background/02.webp") no-repeat center top/cover;
+  min-height: 500px;
+  width: 100%;
+  margin-bottom: 200px;
+}
+.main-middle-form .main-middle-title {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.main-middle-form .main-middle-title .logo {
+  margin: 0 auto;
+  width: 3.5%;
+}
+.main-middle-form .main-middle-title .description .explanation {
+  color: #c2c2c2;
+  opacity: 0.7;
+  font-family: "roboto-bold";
+  text-align: center;
+}
+.main-middle-form .main-middle-title .description .features {
+  font-size: 55px;
+  color: white;
+}
+.main-middle-form .form {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  grid-gap: 10px;
+  padding: 5px;
+}
+.main-middle-form .form .website-input {
+  padding: 25px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.main-middle-form .form .website-input::-moz-placeholder {
+  font-size: 16px;
+  font-family: "roboto";
+  color: #929292;
+}
+.main-middle-form .form .website-input::placeholder {
+  font-size: 16px;
+  font-family: "roboto";
+  color: #929292;
+}
+.main-middle-form .form .btn-search {
+  border-radius: 10px;
+}
+.main-middle-form .paragraph-wrapper .paragraph-description {
+  color: rgba(214, 214, 214, 0.4);
+  font-size: 16px;
+  margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */
