@@ -106,3 +106,127 @@ li {
   animation-direction: alternate;
   animation-play-state: running;
 }
+// progress bar mixin function
+@mixin progressbar1($color1, $color2) {
+  height: 10px;
+  border-radius: 10px;
+  width: 80%;
+  background: linear-gradient($color1, $color2);
+  position: relative;
+  &::before {
+    content: "Illustrator";
+    position: absolute;
+    top: -300%;
+    font-size: 20px;
+    color: #333;
+  }
+  &::after {
+    content: "80%";
+    position: absolute;
+    top: -300%;
+    left: 100%;
+    transform: translate(-100%);
+    font-size: 20px;
+    color: #333;
+  }
+}
+@mixin progressbar2($color1, $color2) {
+  height: 10px;
+  border-radius: 10px;
+  width: 90%;
+  background: linear-gradient($color1, $color2);
+  position: relative;
+  &::before {
+    content: "Photoshop";
+    position: absolute;
+    top: -300%;
+    font-size: 20px;
+    color: #333;
+  }
+  &::after {
+    content: "90%";
+    position: absolute;
+    top: -300%;
+    left: 100%;
+    transform: translate(-90%);
+    font-size: 20px;
+    color: #333;
+  }
+}
+@mixin progressbar3($color1, $color2) {
+  height: 10px;
+  border-radius: 10px;
+  width: 80%;
+  background: linear-gradient($color1, $color2);
+  position: relative;
+  &::before {
+    content: "SEO";
+    position: absolute;
+    top: -300%;
+    font-size: 20px;
+    color: #333;
+  }
+  &::after {
+    content: "80%";
+    position: absolute;
+    top: -300%;
+    left: 100%;
+    transform: translate(-100%);
+    font-size: 20px;
+    color: #333;
+  }
+}
+@mixin progressbar4($color1, $color2) {
+  height: 10px;
+  border-radius: 10px;
+  width: 60%;
+  background: linear-gradient($color1, $color2);
+  position: relative;
+  &::before {
+    content: "E-commerce";
+    position: absolute;
+    top: -300%;
+    font-size: 20px;
+    color: #333;
+  }
+  &::after {
+    content: "60%";
+    position: absolute;
+    top: -300%;
+    left: 100%;
+    transform: translate(-90%);
+    font-size: 20px;
+    color: #333;
+  }
+}
+@mixin progressbar5($color1, $color2) {
+  height: 10px;
+  border-radius: 10px;
+  width: 70%;
+  background: linear-gradient($color1, $color2);
+  position: relative;
+  &::before {
+    content: "HTML";
+    position: absolute;
+    top: -300%;
+    font-size: 20px;
+    color: #333;
+  }
+  &::after {
+    content: "70%";
+    position: absolute;
+    top: -300%;
+    left: 100%;
+    transform: translate(-90%);
+    font-size: 20px;
+    color: #333;
+  }
+}
+@mixin progressbar-wrapper() {
+  width: 100%;
+  height: 10px;
+  border: 1px solid rgba(169, 169, 169, 0.2);
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
