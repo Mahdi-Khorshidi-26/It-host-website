@@ -43,7 +43,7 @@ li {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -53,9 +53,9 @@ li {
 }
 
 .active {
-  color: #EB2B63 !important;
+  color: #eb2b63 !important;
   font-family: "roboto-bold";
-  border-bottom: 2px solid #EB2B63;
+  border-bottom: 2px solid #eb2b63;
 }
 
 .btn {
@@ -70,7 +70,7 @@ li {
   border-radius: 10px;
   padding-inline: 25px;
   color: white;
-  background-color: #EB2B63;
+  background-color: #eb2b63;
   font-family: "roboto-bold";
   cursor: pointer;
 }
@@ -113,7 +113,7 @@ li {
 
 .header {
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/img/background/bg.jpg.webp") no-repeat fixed top center/cover;
+  background: url("../assets/img/background/bg.jpg.webp") no-repeat fixed top center/cover;
   min-height: 800px;
 }
 .header .nav {
@@ -144,14 +144,14 @@ li {
 }
 .header .nav .nav-menu .menu .menu-item .menu-link:hover {
   transition: 0.3s;
-  border-bottom: 2px solid #EB2B63;
-  color: #EB2B63;
+  border-bottom: 2px solid #eb2b63;
+  color: #eb2b63;
 }
 .header .nav .nav-menu .menu .menu-item:last-child .menu-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #EB2B63;
+  background-color: #eb2b63;
   border-radius: 100px;
   transition: 0.5s;
   border-bottom: 0px;
@@ -159,9 +159,9 @@ li {
 .header .nav .nav-menu .menu .menu-item:last-child .menu-link:hover {
   transition: 0.5s;
   background-color: white;
-  color: #EB2B63;
+  color: #eb2b63;
   border-bottom: 0px;
-  box-shadow: 1px 1px 3px #EB2B63;
+  box-shadow: 1px 1px 3px #eb2b63;
   opacity: 0.9;
 }
 .header .nav .nav-menu .menu .menu-item:not(:last-child) {
@@ -244,7 +244,7 @@ li {
 }
 .main-top-features .card-features .icon-features {
   font-size: 30px;
-  background-color: #EB2B63;
+  background-color: #eb2b63;
   padding: 35px;
   border-radius: 50%;
   color: white;
@@ -343,7 +343,7 @@ li {
   height: 10px;
   border-radius: 10px;
   width: 80%;
-  background: linear-gradient(#EB2B63, crimson);
+  background: linear-gradient(#eb2b63, crimson);
   position: relative;
 }
 .main-middle-progressbar .container-1100 .progressbars .progressbar-wrapper .progressbar1::before {
@@ -499,7 +499,7 @@ li {
 }
 .main-middle-progressbar .container-1100 .slide-messages .message .circle-2 {
   margin-left: 20px;
-  background-color: #EB2B63;
+  background-color: #eb2b63;
 }
 .main-middle-progressbar .container-1100 .slide-messages .message .circle-3 {
   margin-left: 40px;
@@ -540,7 +540,7 @@ li {
   font-family: "roboto-bold";
   font-variant: small-caps;
   text-transform: capitalize;
-  color: #EB2B63;
+  color: #eb2b63;
   text-align: end;
 }
 
@@ -615,7 +615,7 @@ li {
   text-transform: uppercase;
   padding: 15px;
   font-size: 25px;
-  background-color: #EB2B63;
+  background-color: #eb2b63;
   border-radius: 20px;
   box-shadow: 1px 1px 5px black;
   margin-bottom: 15px;
@@ -625,7 +625,7 @@ li {
   padding: 20px;
   border-radius: 10px;
   background-color: #eef6f9;
-  border: 2px solid #EB2B63;
+  border: 2px solid #eb2b63;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
 .main-selling-plans .container-1100 .plans .star .star-plan-rm .price {
@@ -750,7 +750,7 @@ li {
 }
 .footer-middle .container-1100 .section-1 .it-host .social-media-icons .icon-list .icon-item .icon-item-link:hover {
   transition: 0.4s;
-  background-color: #EB2B63;
+  background-color: #eb2b63;
 }
 .footer-middle .container-1100 .section-2 {
   margin-top: 53px;
@@ -778,7 +778,7 @@ li {
 }
 .footer-middle .container-1100 .section-2 .usefull-link-lists .usefull-link-list .list-item .item-link:hover {
   transition: 0.4s;
-  color: #EB2B63;
+  color: #eb2b63;
 }
 .footer-middle .container-1100 .section-3 {
   display: flex;
@@ -817,12 +817,12 @@ li {
 }
 .footer-middle .container-1100 .section-3 .comment-post .description .text:hover {
   transition: 0.4s;
-  color: #EB2B63;
+  color: #eb2b63;
 }
 .footer-middle .container-1100 .section-3 .comment-post .description .time {
   cursor: pointer;
   transition: 0.4s;
-  color: #EB2B63;
+  color: #eb2b63;
   font-size: 15px;
   font-family: "roboto-bold";
 }
@@ -848,16 +848,16 @@ li {
 }
 .footer-bottom .container-1100 .copyright i {
   padding-inline: 10px;
-  color: #EB2B63;
+  color: #eb2b63;
 }
 .footer-bottom .container-1100 .copyright span a {
   padding-inline: 10px;
-  color: #EB2B63;
+  color: #eb2b63;
   font-size: 15px;
   font-family: cursive;
 }
 .footer-bottom .container-1100 .copyright span a:active {
-  color: #EB2B63;
+  color: #eb2b63;
 }
 .footer-bottom .container-1100 .footer-menu .menu {
   display: flex;
