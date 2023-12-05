@@ -316,11 +316,12 @@ li {
 }
 
 .main-middle-progressbar {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .main-middle-progressbar .container-1100 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
 }
 .main-middle-progressbar .container-1100 .progressbars .progressbar-wrapper {
   width: 100%;
@@ -444,4 +445,241 @@ li {
   transform: translate(-90%);
   font-size: 20px;
   color: #333;
+}
+.main-middle-progressbar .container-1100 .slide-messages {
+  cursor: pointer;
+  position: relative;
+}
+.main-middle-progressbar .container-1100 .slide-messages .message {
+  background-color: #eef6f9;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  padding-inline: 70px;
+  border-radius: 10px;
+  color: rgba(51, 51, 51, 0.5);
+  text-align: justify;
+  line-height: 1.7em;
+  position: relative;
+  font-size: 16px;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 6px #eef6f9;
+  font-family: "roboto-bold";
+}
+.main-middle-progressbar .container-1100 .slide-messages .message:after {
+  content: "";
+  border: 15px solid transparent;
+  border-top: 15px solid #eef6f9;
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  transform: translate(-170%, 0%);
+}
+.main-middle-progressbar .container-1100 .slide-messages .message .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px #eef6f9;
+  cursor: pointer;
+  position: absolute;
+  top: 155%;
+  left: 0%;
+}
+.main-middle-progressbar .container-1100 .slide-messages .message .circle-1 {
+  background-color: #eef6f9;
+}
+.main-middle-progressbar .container-1100 .slide-messages .message .circle-2 {
+  margin-left: 20px;
+  background-color: #EB2B63;
+}
+.main-middle-progressbar .container-1100 .slide-messages .message .circle-3 {
+  margin-left: 40px;
+  background-color: #eef6f9;
+}
+.main-middle-progressbar .container-1100 .slide-messages .client .person {
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  transform: translate(-100%, -100%);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 1px 1px 5px black;
+}
+.main-middle-progressbar .container-1100 .slide-messages .client .person img {
+  border-radius: 50%;
+}
+.main-middle-progressbar .container-1100 .slide-messages .client .client-info {
+  position: absolute;
+  left: 80%;
+  top: 90%;
+  transform: translate(-100%, -100%);
+  display: flex;
+  flex-direction: column;
+  width: 37%;
+  padding-right: 20px;
+}
+.main-middle-progressbar .container-1100 .slide-messages .client .client-info .client-name {
+  font-size: 17px;
+  font-family: "roboto-bold";
+  font-variant: small-caps;
+  text-transform: capitalize;
+  text-align: end;
+}
+.main-middle-progressbar .container-1100 .slide-messages .client .client-info .client-position {
+  font-size: 15px;
+  font-family: "roboto-bold";
+  font-variant: small-caps;
+  text-transform: capitalize;
+  color: #EB2B63;
+  text-align: end;
+}
+
+.main-bottom-title {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.main-bottom-title .logo {
+  width: 13%;
+  padding-left: 90px;
+}
+.main-bottom-title .description .explanation {
+  color: rgba(51, 51, 51, 0.5);
+  font-family: "roboto-bold";
+  text-align: center;
+}
+.main-bottom-title .description .features {
+  font-size: 55px;
+}
+
+.main-selling-plans {
+  margin-bottom: 100px;
+}
+.main-selling-plans .container-1100 .plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.main-selling-plans .container-1100 .plans .basic .plan-button {
+  text-align: center;
+  font-family: "roboto-bold";
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 25px;
+  background-color: #6b3eac;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 15px;
+  color: white;
+}
+.main-selling-plans .container-1100 .plans .basic .basic-plan-rm {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #eef6f9;
+}
+.main-selling-plans .container-1100 .plans .basic .basic-plan-rm .price {
+  margin-top: 20px;
+}
+.main-selling-plans .container-1100 .plans .basic .basic-plan-rm .price span {
+  font-size: 70px;
+  font-family: "roboto-bold";
+  color: #333;
+}
+.main-selling-plans .container-1100 .plans .basic .basic-plan-rm .text-plan {
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 18px;
+  font-family: "roboto-bold";
+}
+.main-selling-plans .container-1100 .plans .basic .basic-plan-rm .get-plan-btn {
+  text-align: center;
+  margin: 50px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.main-selling-plans .container-1100 .plans .star .plan-button {
+  text-align: center;
+  font-family: "roboto-bold";
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 25px;
+  background-color: #EB2B63;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 15px;
+  color: white;
+}
+.main-selling-plans .container-1100 .plans .star .star-plan-rm {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #eef6f9;
+  border: 2px solid #EB2B63;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+.main-selling-plans .container-1100 .plans .star .star-plan-rm .price {
+  margin-top: 20px;
+}
+.main-selling-plans .container-1100 .plans .star .star-plan-rm .price span {
+  font-size: 70px;
+  font-family: "roboto-bold";
+  color: #333;
+}
+.main-selling-plans .container-1100 .plans .star .star-plan-rm .text-plan {
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 18px;
+  font-family: "roboto-bold";
+}
+.main-selling-plans .container-1100 .plans .star .star-plan-rm .get-plan-btn {
+  text-align: center;
+  margin: 50px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.main-selling-plans .container-1100 .plans .vip .plan-button {
+  text-align: center;
+  font-family: "roboto-bold";
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 25px;
+  background-color: #6b3eac;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 15px;
+  color: white;
+}
+.main-selling-plans .container-1100 .plans .vip .vip-plan-rm {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #eef6f9;
+}
+.main-selling-plans .container-1100 .plans .vip .vip-plan-rm .price {
+  margin-top: 20px;
+}
+.main-selling-plans .container-1100 .plans .vip .vip-plan-rm .price span {
+  font-size: 70px;
+  font-family: "roboto-bold";
+  color: #333;
+}
+.main-selling-plans .container-1100 .plans .vip .vip-plan-rm .text-plan {
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 18px;
+  font-family: "roboto-bold";
+}
+.main-selling-plans .container-1100 .plans .vip .vip-plan-rm .get-plan-btn {
+  text-align: center;
+  margin: 50px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.footer {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

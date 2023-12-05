@@ -132,10 +132,11 @@
 }
 // main middle progressbar
 .main-middle-progressbar {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   .container-1100 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
     .progressbars {
       .progressbar-wrapper {
         @include progressbar-wrapper();
@@ -153,6 +154,218 @@
         }
         .progressbar5 {
           @include progressbar5(#732beb, #732beb);
+        }
+      }
+    }
+    .slide-messages {
+      cursor: pointer;
+      position: relative;
+      .message {
+        background-color: #eef6f9;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        padding-inline: 70px;
+        border-radius: 10px;
+        color: rgba(51, 51, 51, 0.5);
+        text-align: justify;
+        line-height: 1.7em;
+        position: relative;
+        font-size: 16px;
+        font-variant: small-caps;
+        text-transform: capitalize;
+        box-shadow: 2px 2px 6px #eef6f9;
+        font-family: $font-roboto-bold;
+        &:after {
+          content: "";
+          border: 15px solid transparent;
+          border-top: 15px solid #eef6f9;
+          position: absolute;
+          left: 100%;
+          top: 100%;
+          transform: translate(-170%, 0%);
+        }
+        .circle {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          box-shadow: 1px 1px 5px #eef6f9;
+          cursor: pointer;
+          position: absolute;
+          top: 155%;
+          left: 0%;
+        }
+        .circle-1 {
+          background-color: #eef6f9;
+        }
+        .circle-2 {
+          margin-left: 20px;
+          background-color: $background-color-main;
+        }
+        .circle-3 {
+          margin-left: 40px;
+          background-color: #eef6f9;
+        }
+      }
+      .client {
+        .person {
+          position: absolute;
+          left: 100%;
+          top: 100%;
+          transform: translate(-100%, -100%);
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          box-shadow: 1px 1px 5px black;
+          img {
+            border-radius: 50%;
+          }
+        }
+        .client-info {
+          position: absolute;
+          left: 80%;
+          top: 90%;
+          transform: translate(-100%, -100%);
+          display: flex;
+          flex-direction: column;
+          width: 37%;
+          padding-right: 20px;
+          .client-name {
+            @include font-person(17px, $font-roboto-bold);
+            text-align: end;
+          }
+          .client-position {
+            @include font-person(15px, $font-roboto-bold);
+            color: $background-color-main;
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+}
+// main middle title
+.main-bottom-title {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  .logo {
+    width: 13%;
+    padding-left: 90px;
+  }
+  .description {
+    .explanation {
+      color: rgba(51, 51, 51, 0.5);
+      font-family: $font-roboto-bold;
+      text-align: center;
+    }
+    .features {
+      font-size: 55px;
+    }
+  }
+}
+// main selling plans
+.main-selling-plans {
+  margin-bottom: 100px;
+  .container-1100 {
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      .basic {
+        .plan-button {
+          @include btn-plan(#6b3eac);
+        }
+        .basic-plan-rm {
+          padding: 20px;
+          border-radius: 10px;
+          background-color: #eef6f9;
+          .price {
+            margin-top: 20px;
+            span {
+              font-size: 70px;
+              font-family: $font-roboto-bold;
+              color: #333;
+            }
+          }
+          .text-plan {
+            text-align: center;
+            margin-bottom: 40px;
+            color: rgba(51, 51, 51, 0.5);
+            font-size: 18px;
+            font-family: $font-roboto-bold;
+          }
+          .get-plan-btn {
+            text-align: center;
+            margin: 50px;
+            margin-bottom: 10px;
+            padding: 20px;
+          }
+        }
+      }
+      .star {
+        .plan-button {
+          @include btn-plan($background-color-main);
+        }
+        .star-plan-rm {
+          padding: 20px;
+          border-radius: 10px;
+          background-color: #eef6f9;
+          border: 2px solid $background-color-main;
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+          .price {
+            margin-top: 20px;
+            span {
+              font-size: 70px;
+              font-family: $font-roboto-bold;
+              color: #333;
+            }
+          }
+          .text-plan {
+            text-align: center;
+            margin-bottom: 40px;
+            color: rgba(51, 51, 51, 0.5);
+            font-size: 18px;
+            font-family: $font-roboto-bold;
+          }
+          .get-plan-btn {
+            text-align: center;
+            margin: 50px;
+            margin-bottom: 10px;
+            padding: 20px;
+          }
+        }
+      }
+      .vip {
+        .plan-button {
+          @include btn-plan(#6b3eac);
+        }
+        .vip-plan-rm {
+          padding: 20px;
+          border-radius: 10px;
+          background-color: #eef6f9;
+          .price {
+            margin-top: 20px;
+            span {
+              font-size: 70px;
+              font-family: $font-roboto-bold;
+              color: #333;
+            }
+          }
+          .text-plan {
+            text-align: center;
+            margin-bottom: 40px;
+            color: rgba(51, 51, 51, 0.5);
+            font-size: 18px;
+            font-family: $font-roboto-bold;
+          }
+          .get-plan-btn {
+            text-align: center;
+            margin: 50px;
+            margin-bottom: 10px;
+            padding: 20px;
+          }
         }
       }
     }

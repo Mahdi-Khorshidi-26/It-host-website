@@ -230,3 +230,22 @@ li {
   border-radius: 10px;
   margin-bottom: 50px;
 }
+// main middle person name repetetive codes
+@mixin font-person($font-size, $font-name) {
+  font-size: $font-size;
+  font-family: $font-name;
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+@mixin btn-plan($bg-color) {
+  text-align: center;
+  font-family: $font-roboto-bold;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 25px;
+  background-color: $bg-color;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 15px;
+  color: white;
+}
