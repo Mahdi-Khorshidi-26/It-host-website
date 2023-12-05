@@ -82,22 +82,25 @@ li {
 }
 // animations
 @keyframes rocket-mover {
-  0%,
-  100% {
-    top: 40%;
-    left: 65%;
+  0% {
+    top: 30%;
+    left: 55%;
   }
   25% {
-    top: 45%;
-    left: 67%;
+    top: calc(30% + 20px);
+    left: calc(55% + 20px);
   }
   50% {
-    top: 40%;
-    left: 67%;
+    top: calc(30% - 20px);
+    left: calc(55% - 20px);
   }
   75% {
-    top: 45%;
-    left: 65%;
+    top: calc(30% + 20px);
+    left: calc(55% + 20px);
+  }
+  100% {
+    top: calc(30% - 20px);
+    left: calc(55% - 20px);
   }
 }
 .animation-rockt {

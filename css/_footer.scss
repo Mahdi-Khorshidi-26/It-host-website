@@ -27,9 +27,181 @@
 .footer-middle {
   background-color: rgb(32, 5, 69);
   min-height: 550px;
+  .container-1100 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    height: 550px;
+    align-items: center;
+    .section-1 {
+      .it-host {
+        .logo {
+          width: 30%;
+          margin-bottom: 40px;
+        }
+        .description {
+          color: rgba(136, 136, 136, 0.5);
+          line-height: 1.7em;
+          margin-bottom: 40px;
+        }
+        .social-media-icons {
+          .icon-list {
+            display: grid;
+            grid-template-columns: repeat(5, 48px);
+            .icon-item {
+              .icon-item-link {
+                background-color: #491f70;
+                padding: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: 0.4s;
+                display: inline-flex;
+                width: 32px;
+                height: 32px;
+                color: #fff;
+                align-items: center;
+                justify-content: center;
+                margin-right: 13px;
+                font-size: 12px;
+                &:hover {
+                  transition: 0.4s;
+                  background-color: $background-color-main;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-2 {
+      margin-top: 53px;
+      .title {
+        color: white;
+        font-size: 20px;
+        font-family: $font-roboto-bold;
+        margin-bottom: 40px;
+      }
+      .usefull-link-lists {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        .usefull-link-list {
+          .list-item {
+            margin-bottom: 20px;
+            .item-link {
+              cursor: pointer;
+              transition: 0.4s;
+              color: rgba(160, 160, 160, 0.3);
+              font-size: 16px;
+              font-family: $font-roboto-bold;
+              &:hover {
+                transition: 0.4s;
+                color: $background-color-main;
+              }
+            }
+          }
+        }
+      }
+    }
+    .section-3 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 51px;
+      .title {
+        color: white;
+        font-size: 20px;
+        font-family: $font-roboto-bold;
+        margin-bottom: 40px;
+      }
+      .comment-post {
+        display: flex;
+        margin-bottom: 10px;
+        .post-img {
+          border-radius: 20%;
+          width: 20%;
+          height: 20%;
+          margin-right: 25px;
+          img {
+            border-radius: 20%;
+          }
+        }
+        .description {
+          color: white;
+          .text {
+            cursor: pointer;
+            transition: 0.4s;
+            color: rgba(160, 160, 160, 0.3);
+            font-size: 16px;
+            font-family: $font-roboto-bold;
+            margin-bottom: 7px;
+            &:hover {
+              transition: 0.4s;
+              color: $background-color-main;
+            }
+          }
+          .time {
+            cursor: pointer;
+            transition: 0.4s;
+            color: $background-color-main;
+            font-size: 15px;
+            font-family: $font-roboto-bold;
+            &:hover {
+              transition: 0.4s;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 // footer bottom
 .footer-bottom {
   background-color: #1b043b;
   min-height: 70px;
+  .container-1100 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    .copyright {
+      color: rgba(255, 255, 255, 0.2);
+      font-family: $font-roboto-bold;
+      font-size: 15px;
+      i {
+        padding-inline: 10px;
+        color: $background-color-main;
+      }
+      span {
+        a {
+          padding-inline: 10px;
+          color: $background-color-main;
+          font-size: 15px;
+          font-family: cursive;
+          &:active {
+            color: $background-color-main;
+          }
+        }
+      }
+    }
+    .footer-menu {
+      .menu {
+        display: flex;
+        align-items: center;
+        .menu-item {
+          margin-left: 20px;
+          .menu-link {
+            padding: 5px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.2);
+            transition: 0.3s;
+            &:hover {
+              transition: 0.3s;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
 }
