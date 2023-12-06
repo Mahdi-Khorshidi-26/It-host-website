@@ -1,3 +1,23 @@
-.main {
-  margin-top: 100px;
+//main
+.main-about-us {
+  margin-top: 0px;
+}
+
+//main middle form
+.main-middle-form {
+  background: white;
+  .main-middle-title {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    .description {
+      .features {
+        color: black;
+      }
+    }
+  }
+  .form {
+    .website-input {
+      background-color: #f5f1f8;
+    }
+  }
 }
