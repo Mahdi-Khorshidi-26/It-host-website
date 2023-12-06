@@ -116,7 +116,7 @@ li {
 @mixin progressbar1($color1, $color2) {
   height: 10px;
   border-radius: 10px;
-  width: 80%;
+  max-width: 80%;
   background: linear-gradient($color1, $color2);
   position: relative;
   &::before {
@@ -139,7 +139,7 @@ li {
 @mixin progressbar2($color1, $color2) {
   height: 10px;
   border-radius: 10px;
-  width: 90%;
+  max-width: 90%;
   background: linear-gradient($color1, $color2);
   position: relative;
   &::before {
@@ -162,7 +162,7 @@ li {
 @mixin progressbar3($color1, $color2) {
   height: 10px;
   border-radius: 10px;
-  width: 80%;
+  max-width: 80%;
   background: linear-gradient($color1, $color2);
   position: relative;
   &::before {
@@ -185,7 +185,7 @@ li {
 @mixin progressbar4($color1, $color2) {
   height: 10px;
   border-radius: 10px;
-  width: 60%;
+  max-width: 60%;
   background: linear-gradient($color1, $color2);
   position: relative;
   &::before {
@@ -208,7 +208,7 @@ li {
 @mixin progressbar5($color1, $color2) {
   height: 10px;
   border-radius: 10px;
-  width: 70%;
+  max-width: 70%;
   background: linear-gradient($color1, $color2);
   position: relative;
   &::before {
@@ -254,4 +254,30 @@ li {
   box-shadow: 1px 1px 5px black;
   margin-bottom: 15px;
   color: white;
+}
+//progress bar animations
+.animated {
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-duration: 2s;
+}
+@keyframes move {
+  0% {
+    width: 35%;
+  }
+  25% {
+    width: 45%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
 }

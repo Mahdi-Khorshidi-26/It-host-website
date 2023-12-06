@@ -111,6 +111,32 @@ li {
   animation-play-state: running;
 }
 
+.animated {
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-duration: 2s;
+}
+
+@keyframes move {
+  0% {
+    width: 35%;
+  }
+  25% {
+    width: 45%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .header {
   width: 100%;
   background: url("../assets/img/background/bg.jpg.webp") no-repeat fixed top center/cover;
@@ -342,7 +368,7 @@ li {
 .main-middle-progressbar .container-1100 .progressbars .progressbar-wrapper .progressbar1 {
   height: 10px;
   border-radius: 10px;
-  width: 80%;
+  max-width: 80%;
   background: linear-gradient(#eb2b63, crimson);
   position: relative;
 }
@@ -365,7 +391,7 @@ li {
 .main-middle-progressbar .container-1100 .progressbars .progressbar-wrapper .progressbar2 {
   height: 10px;
   border-radius: 10px;
-  width: 90%;
+  max-width: 90%;
   background: linear-gradient(rgb(235, 43, 174), rgb(235, 43, 174));
   position: relative;
 }
@@ -388,7 +414,7 @@ li {
 .main-middle-progressbar .container-1100 .progressbars .progressbar-wrapper .progressbar3 {
   height: 10px;
   border-radius: 10px;
-  width: 80%;
+  max-width: 80%;
   background: linear-gradient(#d22beb, #d22beb);
   position: relative;
 }
@@ -411,7 +437,7 @@ li {
 .main-middle-progressbar .container-1100 .progressbars .progressbar-wrapper .progressbar4 {
   height: 10px;
   border-radius: 10px;
-  width: 60%;
+  max-width: 60%;
   background: linear-gradient(#972beb, #972beb);
   position: relative;
 }
@@ -434,7 +460,7 @@ li {
 .main-middle-progressbar .container-1100 .progressbars .progressbar-wrapper .progressbar5 {
   height: 10px;
   border-radius: 10px;
-  width: 70%;
+  max-width: 70%;
   background: linear-gradient(#732beb, #732beb);
   position: relative;
 }
