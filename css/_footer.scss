@@ -27,6 +27,7 @@
 .footer-middle {
   background-color: rgb(32, 5, 69);
   min-height: 550px;
+  position: relative;
   .container-1100 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -153,6 +154,18 @@
         }
       }
     }
+  }
+  .up-icon {
+    position: absolute;
+    font-size: 70px;
+    color: $background-color-main;
+    top: 100%;
+    left: 100%;
+    transform: translate(-150%, -100%);
+    cursor: pointer;
+  }
+  #icon {
+    display: none;
   }
 }
 // footer bottom

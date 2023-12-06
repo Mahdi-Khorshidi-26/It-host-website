@@ -738,6 +738,7 @@ li {
 .footer-middle {
   background-color: rgb(32, 5, 69);
   min-height: 550px;
+  position: relative;
 }
 .footer-middle .container-1100 {
   display: grid;
@@ -855,6 +856,18 @@ li {
 .footer-middle .container-1100 .section-3 .comment-post .description .time:hover {
   transition: 0.4s;
   color: white;
+}
+.footer-middle .up-icon {
+  position: absolute;
+  font-size: 70px;
+  color: #eb2b63;
+  top: 100%;
+  left: 100%;
+  transform: translate(-150%, -100%);
+  cursor: pointer;
+}
+.footer-middle #icon {
+  display: none;
 }
 
 .footer-bottom {

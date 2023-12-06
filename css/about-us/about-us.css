@@ -1,0 +1,17 @@
+.header {
+  min-height: 400px;
+}
+
+.header .container-1100 .site-description-header-text .title {
+  font-size: 3rem;
+}
+.header .container-1100 .site-description-header-text .paragraph-wrapper .paragraph-description {
+  color: #868686;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 5px 0px;
+}
+
+.main {
+  margin-top: 100px;
+}/*# sourceMappingURL=about-us.css.map */
