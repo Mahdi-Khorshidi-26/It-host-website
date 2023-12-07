@@ -28,4 +28,181 @@
 }
 .main-middle-form .form .website-input {
   background-color: #f5f1f8;
+}
+
+.middle-post-about-us {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 50px;
+}
+.middle-post-about-us .description-post .title {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1b1b1b;
+}
+.middle-post-about-us .description-post .text {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 100px;
+  color: #949494;
+}
+.middle-post-about-us .description-post .description-post-btn {
+  display: flex;
+}
+.middle-post-about-us .description-post .description-post-btn .btn {
+  padding-inline: 50px;
+}
+
+.middle-info-about-us {
+  background: url("../../assets/img/background/02.webp") no-repeat top center/cover;
+  min-height: 500px;
+  margin-bottom: 100px;
+}
+
+.middle-info-about-us .container-1100 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.middle-info-about-us .row-1 {
+  margin-bottom: 70px;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 100px;
+  align-items: center;
+}
+.middle-info-about-us .row-1 .description {
+  grid-column: span 6;
+  color: rgb(236, 236, 236);
+  font-size: 18px;
+  line-height: 1.7em;
+}
+.middle-info-about-us .row-1 .btn {
+  grid-column: span 2;
+  padding-inline: 50px;
+}
+
+.middle-info-about-us .row-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+.middle-info-about-us .row-2 .adv {
+  text-align: center;
+}
+.middle-info-about-us .row-2 .adv .icon-wrapper {
+  margin-bottom: 20px;
+}
+.middle-info-about-us .row-2 .adv .icon-wrapper .icon {
+  color: #eb2b63;
+  font-size: 76px;
+}
+.middle-info-about-us .row-2 .adv .icon-title {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: white;
+}
+.middle-info-about-us .row-2 .adv .icon-description {
+  font-size: 18px;
+  margin-bottom: 0;
+  color: white;
+  font-weight: 600;
+}
+
+.middle-top-title-about-us {
+  margin-bottom: 100px;
+}
+.middle-top-title-about-us .container-1100 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 65px;
+}
+.middle-top-title-about-us .container-1100 .logo img {
+  width: 11%;
+}
+.middle-top-title-about-us .container-1100 .description {
+  text-align: center;
+}
+.middle-top-title-about-us .container-1100 .description .explanation {
+  word-spacing: 5px;
+  color: #666;
+  font-weight: 600;
+}
+.middle-top-title-about-us .container-1100 .description .features {
+  font-size: 55px;
+}
+
+.meet-team-about-us {
+  margin-bottom: 100px;
+}
+.meet-team-about-us .container-1100 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+.meet-team-about-us .container-1100 .person {
+  text-align: center;
+}
+.meet-team-about-us .container-1100 .person .img-wrapper {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 50px;
+}
+.meet-team-about-us .container-1100 .person .img-wrapper img {
+  border-radius: 10px;
+}
+.meet-team-about-us .container-1100 .person .person-name {
+  font-size: 30px;
+  color: #1b1b1b;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.meet-team-about-us .container-1100 .person .person-work-position {
+  font-size: 15px;
+  color: #9c9c9c;
+  font-weight: 600;
+  word-spacing: 5px;
+  margin-bottom: 18px;
+}
+.meet-team-about-us .container-1100 .person .person-social-media .social-media-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.meet-team-about-us .container-1100 .person .person-social-media .social-media-list .social-item {
+  margin-right: 30px;
+}
+.meet-team-about-us .container-1100 .person .person-social-media .social-media-list .social-item .social-link {
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: white;
+  background-color: #491f70;
+  border-radius: 50%;
+  transition: 0.3s;
+  font-size: 13px;
+}
+.meet-team-about-us .container-1100 .person .person-social-media .social-media-list .social-item .social-link:hover {
+  transition: 0.4s;
+  color: #eb2b63;
+}
+.meet-team-about-us .container-1100 .person .person-social-media .social-media-list .last {
+  margin-right: 0px;
 }/*# sourceMappingURL=about-us.css.map */
