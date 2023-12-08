@@ -205,4 +205,31 @@
 }
 .meet-team-about-us .container-1100 .person .person-social-media .social-media-list .last {
   margin-right: 0px;
+}
+
+.client-logos-about-us {
+  background-color: #dde7ee;
+  min-height: 200px;
+}
+.client-logos-about-us .container-1100 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  align-items: center;
+  height: 200px;
+}
+.client-logos-about-us .container-1100 .client-logo {
+  display: flex;
+  align-items: center;
+}
+.client-logos-about-us .container-1100 .client-logo .logo {
+  width: 50px;
+  height: 50px;
+  background-color: #a7b9c8;
+  margin-right: 7px;
+}
+.client-logos-about-us .container-1100 .client-logo .client-info {
+  font-weight: 700;
+  font-size: 18px;
+  color: #a7b9c8;
 }/*# sourceMappingURL=about-us.css.map */

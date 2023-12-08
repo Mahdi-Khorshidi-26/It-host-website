@@ -211,6 +211,29 @@
 }
 // client logos about us
 .client-logos-about-us {
+  background-color: #dde7ee;
+  min-height: 200px;
   .container-1100 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    align-items: center;
+    height: 200px;
+    .client-logo {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        background-color: #a7b9c8;
+        margin-right: 7px;
+      }
+      .client-info {
+        font-weight: 700;
+        font-size: 18px;
+        color: #a7b9c8;
+      }
+    }
   }
 }
