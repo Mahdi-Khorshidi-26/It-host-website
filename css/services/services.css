@@ -14,4 +14,94 @@
 
 .main {
   margin-top: 100px;
+}
+
+.main-middle-services {
+  margin: 100px 0px;
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.main-middle-services .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-middle-services .section .btn-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+.main-middle-services .section .btn-wrapper .btn {
+  grid-column: span 2;
+}
+.main-middle-services .section-1,
+.main-middle-services .section-2 {
+  padding: 150px 65px;
+  color: white;
+}
+.main-middle-services .section-1 .title,
+.main-middle-services .section-2 .title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.main-middle-services .section-1 .description,
+.main-middle-services .section-2 .description {
+  width: 100%;
+  margin: 40px 0px;
+  line-height: 1.7;
+  font-size: 15px;
+}
+.main-middle-services .section-1 {
+  background: linear-gradient(to bottom, rgb(15, 5, 52), rgb(15, 5, 51) 50%, rgb(15, 5, 51) 75%, rgba(15, 5, 51, 0.9) 100%);
+}
+.main-middle-services .section-2 {
+  background: linear-gradient(to bottom, rgb(45, 22, 120), rgb(45, 22, 120) 50%, rgb(45, 22, 120) 75%, rgba(45, 22, 120, 0.9) 100%);
+}
+.main-middle-services .section-3 {
+  background: linear-gradient(to bottom, rgb(66, 43, 143), rgb(66, 43, 143) 50%, rgb(66, 43, 143) 75%, rgba(66, 43, 143, 0.9) 100%);
+}
+
+.main-bottom-wrapper {
+  margin-bottom: 100px;
+}
+.main-bottom-wrapper .btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 28px;
+  background: linear-gradient(to right, rgb(45, 22, 118), rgb(28, 13, 77) 50%, rgb(22, 10, 59) 75%, rgb(19, 9, 51) 100%);
+  font-size: 18px;
+}
+.main-bottom-wrapper .btn .sign {
+  font-weight: 700;
+}
+.main-bottom-wrapper .last-btn {
+  background: linear-gradient(to right, #eb2b63, #eb2b63 50%, #eb2b63 75%, #eb2b63 100%);
+}
+.main-bottom-wrapper .detail {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding: 80px;
+}
+.main-bottom-wrapper .detail .section-left .title {
+  font-size: 25px;
+  font-weight: 600;
+}
+.main-bottom-wrapper .detail .section-left .text {
+  margin-top: 30px;
+  color: #333;
+  opacity: 0.75;
+  line-height: 1.7;
+}
+.main-bottom-wrapper .detail .section-right {
+  border-radius: 10px;
+}
+.main-bottom-wrapper .detail .section-right img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
 }/*# sourceMappingURL=services.css.map */
