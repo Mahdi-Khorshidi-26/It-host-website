@@ -1,0 +1,134 @@
+// header
+
+.header {
+  .nav {
+    .nav-menu {
+      .menu {
+        .menu-item {
+          padding-top: 20px;
+          .menu-link {
+            font-size: 16px;
+            padding: 5px;
+          }
+          &:last-child {
+            .menu-link {
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.header {
+  .container-1100 {
+    grid-template-columns: 1fr;
+    .site-description-header-text {
+      grid-column: 1/-1;
+      .paragraph-wrapper {
+        .paragraph-description {
+          margin-bottom: 55px;
+        }
+      }
+      .btn {
+        padding-inline: 35px;
+      }
+    }
+    .rocket {
+      display: none;
+    }
+  }
+}
+//footer
+// footer top
+.footer-top {
+  .container-1100 {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 50px;
+    .footer-top-first-section-text {
+      .title {
+        margin-bottom: 5px;
+      }
+      .description {
+        margin-bottom: 35px;
+        line-height: 1.7;
+      }
+    }
+    .btn {
+      width: 25%;
+    }
+  }
+}
+// footer middle
+.footer-middle {
+  min-height: 850px;
+  .container-1100 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "it-host it-host"
+      "usefull-link latest-posts";
+    grid-gap: 30px;
+    align-items: center;
+    .section-1 {
+      width: 100%;
+      padding-top: 100px;
+      padding-inline: 50px;
+      grid-area: it-host;
+      .it-host {
+        .logo {
+          width: 18%;
+          margin-bottom: 40px;
+        }
+        .social-media-icons {
+          .icon-list {
+            grid-template-columns: repeat(5, 43px);
+          }
+        }
+      }
+    }
+    .section-2 {
+      grid-area: usefull-link;
+      padding-left: 50px;
+      .usefull-link-lists {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+    }
+    .section-3 {
+      grid-area: latest-posts;
+      margin-top: 65px;
+    }
+  }
+}
+// footer bottom
+.footer-bottom {
+  min-height: 90px;
+  .container-1100 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "menu menu"
+      "copyright copyright";
+    height: 90px;
+    .copyright {
+      grid-area: copyright;
+      padding: 25px;
+      padding-top: 5px;
+      font-size: 15px;
+    }
+    .footer-menu {
+      grid-area: menu;
+      display: grid;
+      justify-items: flex-end;
+      padding-top: 20px;
+      padding-right: 20px;
+      width: 100%;
+    }
+  }
+}
