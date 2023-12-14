@@ -114,7 +114,7 @@ li {
 .animated {
   animation-name: move;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-direction: alternate;
   animation-duration: 2s;
