@@ -36,10 +36,23 @@
     text-align: left;
     padding: 20px;
     cursor: pointer;
+    position: relative;
+  }
+  .header .nav-mobile .nav-menu .menu .menu-item:hover {
+    transition: 0.5s;
+    color: rgb(236, 48, 85);
   }
   .header .nav-mobile .nav-menu .menu .menu-item .menu-link {
     width: 100%;
     font-weight: 500;
+  }
+  .header .nav-mobile .nav-menu .menu .menu-item .menu-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
   .header .nav-mobile .nav-menu .menu .register-item {
     width: 100%;
@@ -61,6 +74,14 @@
     background-color: white;
     border-bottom: 0px;
     opacity: 0.9;
+  }
+  .header .nav-mobile .nav-menu .menu .register-item .menu-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
   }
   .header .container-1100 .site-description-header-text .title {
     color: white;
@@ -128,8 +149,11 @@
   }
   .main-middle-progressbar .container-1100 .slider-wrapper .slide-messages .client .client-info {
     position: absolute;
-    left: 77%;
-    top: 155%;
+    left: 75%;
+    top: 160%;
+  }
+  .main-middle-progressbar .container-1100 .slider-wrapper .slide-messages .client .client-info .client-name {
+    font-size: 16px;
   }
   .main-bottom-title {
     margin-top: 150px;

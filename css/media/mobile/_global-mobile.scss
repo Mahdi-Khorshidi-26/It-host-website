@@ -41,9 +41,22 @@
           text-align: left;
           padding: 20px;
           cursor: pointer;
+          position: relative;
+          &:hover {
+            transition: 0.5s;
+            color: rgb(236, 48, 85);
+          }
           .menu-link {
             width: 100%;
             font-weight: 500;
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
+            }
           }
         }
         .register-item {
@@ -64,6 +77,14 @@
               background-color: white;
               border-bottom: 0px;
               opacity: 0.9;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
             }
           }
         }

@@ -52,8 +52,11 @@
             }
             .client-info {
               position: absolute;
-              left: 77%;
-              top: 155%;
+              left: 75%;
+              top: 160%;
+              .client-name {
+                font-size: 16px;
+              }
             }
           }
         }
