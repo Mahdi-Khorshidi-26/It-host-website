@@ -1,4 +1,104 @@
 @media (max-width: 768px) {
   // header and footer
   @import "global";
+  //main
+  //main middle form
+  .main-middle-form {
+    .form {
+      padding-inline: 50px;
+    }
+  }
+  // main middle post
+  .middle-post-about-us {
+    padding-inline: 50px;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-gap: 50px;
+    .description-post {
+      .title {
+        margin-top: 50px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #1b1b1b;
+      }
+      .text {
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 50px;
+        color: #949494;
+      }
+      .description-post-btn {
+        display: flex;
+        .btn {
+          padding-inline: 50px;
+        }
+      }
+    }
+  }
+
+  // main middle info
+  .middle-info-about-us {
+    background: url("../../../assets/img/background/02.webp") no-repeat top
+      center/ cover;
+  }
+  .middle-info-about-us {
+    .container-1100 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+    }
+  }
+  .middle-info-about-us {
+    .row-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .description {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+  .middle-info-about-us {
+    .row-2 {
+      margin-bottom: 100px;
+    }
+  }
+  // main title section
+  .middle-top-title-about-us {
+    margin-bottom: 100px;
+    .container-1100 {
+      .logo {
+        margin-left: 68px;
+        margin-bottom: 10px;
+        img {
+          width: 17%;
+        }
+      }
+    }
+  }
+  //meet team
+  .meet-team-about-us {
+    .container-1100 {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 50px;
+    }
+  }
+  // client logos about us
+  .client-logos-about-us {
+    .container-1100 {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-inline: 25px;
+      .client-logo {
+        .logo {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
 }
