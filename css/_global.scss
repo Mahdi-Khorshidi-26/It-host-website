@@ -84,34 +84,68 @@ li {
 @keyframes rocket-mover {
   0% {
     top: 30%;
-    left: 55%;
+    left: 60%;
+    bottom: 20%;
+    right: 20%;
   }
   25% {
-    top: calc(30% + 20px);
-    left: calc(55% + 20px);
+    top: calc(30% + 3%);
+    left: 60%;
+    bottom: 20%;
+    right: 20%;
   }
   50% {
-    top: calc(30% - 20px);
-    left: calc(55% - 20px);
+    top: calc(30% + 3%);
+    left: calc(60% + 3%);
+    bottom: 20%;
+    right: 20%;
   }
   75% {
-    top: calc(30% + 20px);
-    left: calc(55% + 20px);
+    top: calc(30% - 3%);
+    left: calc(60% + 3%);
+    bottom: 20%;
+    right: 20%;
   }
   100% {
-    top: calc(30% - 20px);
-    left: calc(55% - 20px);
+    top: 30%;
+    left: 60%;
+    bottom: 20%;
+    right: 20%;
   }
 }
 .animation-rockt {
   animation-name: rocket-mover;
   animation-duration: 2s;
   animation-timing-function: linear;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-play-state: running;
 }
+@keyframes rocket {
+  0% {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  25% {
+    left: -20px;
+    bottom: 20px;
+  }
+  50% {
+    left: -20px;
+    bottom: 0px;
+  }
+  75% {
+    left: 0px;
+    bottom: 0px;
+  }
+  100% {
+    left: 20px;
+    bottom: 20px;
+  }
+}
+
 // progress bar mixin function
 @mixin progressbar1($color1, $color2) {
   height: 10px;
@@ -280,4 +314,31 @@ li {
   100% {
     width: 100%;
   }
+}
+// slider animations
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(2000px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(2000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.slide-animated {
+  animation-name: slide;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-direction: alternate-reverse;
+  animation-duration: 7s;
 }

@@ -7,5 +7,83 @@
     }
   }
   //main
+  // main
+
+  // main top title
+  .main-top-title {
+    .logo {
+      width: 44%;
+      padding-left: 85px;
+    }
+  }
+  // main top features
+  .main-top-features {
+    grid-template-columns: 1fr;
+  }
+  // main middle form
+  .main-middle-form {
+    .main-middle-title {
+      .logo {
+        width: 5%;
+      }
+    }
+    .form {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 20px;
+    }
+    .paragraph-wrapper {
+      padding: 0px 20px;
+    }
+  }
+  // main middle progressbar
+  .main-middle-progressbar {
+    margin-bottom: 100px;
+    .container-1100 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+      .slider-wrapper {
+        .slide-messages {
+          position: relative;
+          .client {
+            .person {
+              left: 100%;
+              top: 170%;
+            }
+            .client-info {
+              position: absolute;
+              left: 77%;
+              top: 155%;
+            }
+          }
+        }
+      }
+    }
+  }
+  // main middle title
+  .main-bottom-title {
+    margin-top: 150px;
+    .logo {
+      width: 40%;
+    }
+  }
+  // main selling plans
+  .main-selling-plans {
+    .container-1100 {
+      .plans {
+        padding-inline: 25px;
+      }
+    }
+  }
   //footer
+  @import "global-footer";
+  .footer-top {
+    display: block;
+    .container-1100 {
+      padding: 10px;
+      .btn {
+        width: 40%;
+      }
+    }
+  }
 }
