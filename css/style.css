@@ -154,6 +154,14 @@ li {
   cursor: pointer;
   position: relative;
 }
+.header .nav .hamberger-menu {
+  display: none;
+}
+.header .nav .hamberger-menu .fa-bars {
+  color: white;
+  font-weight: 800;
+  font-size: 30px;
+}
 .header .nav .nav-menu .menu {
   display: flex;
   justify-content: center;
@@ -219,6 +227,63 @@ li {
   top: 40%;
   left: 65%;
   width: 45%;
+}
+
+.header {
+  position: relative;
+}
+.header input#checkbox {
+  display: none;
+}
+.header input#checkbox[type=checkbox]:checked ~ nav.nav-mobile {
+  transition: 0.5s;
+  display: block;
+}
+.header .nav-mobile {
+  z-index: 5;
+  display: none;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 2px 2px 5px black;
+}
+.header .nav-mobile .nav-menu .menu .menu-item {
+  width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  text-align: left;
+  padding: 20px;
+  cursor: pointer;
+}
+.header .nav-mobile .nav-menu .menu .menu-item:hover {
+  color: #eb2b63;
+}
+.header .nav-mobile .nav-menu .menu .menu-item .menu-link {
+  width: 100%;
+  font-weight: 500;
+}
+.header .nav-mobile .nav-menu .menu .register-item {
+  width: 100%;
+  text-align: right;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  padding: 20px;
+}
+.header .nav-mobile .nav-menu .menu .register-item .menu-link {
+  width: 100%;
+  padding: 10px 20px;
+  font-weight: 500;
+  background-color: #eb2b63;
+  border-radius: 100px;
+  transition: 0.5s;
+  border-bottom: 0px;
+  color: white;
+}
+.header .nav-mobile .nav-menu .menu .register-item .menu-link:hover {
+  transition: 0.5s;
+  background-color: white;
+  color: #eb2b63;
+  border-bottom: 0px;
+  box-shadow: 1px 1px 3px #eb2b63;
+  opacity: 0.9;
 }
 
 .main-top-title {

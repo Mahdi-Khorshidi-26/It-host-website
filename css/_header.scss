@@ -16,6 +16,14 @@
       cursor: pointer;
       position: relative;
     }
+    .hamberger-menu {
+      display: none;
+      .fa-bars {
+        color: white;
+        font-weight: 800;
+        font-size: 30px;
+      }
+    }
     .nav-menu {
       .menu {
         display: flex;
@@ -90,6 +98,66 @@
       top: 40%;
       left: 65%;
       width: 45%;
+    }
+  }
+}
+.header {
+  position: relative;
+  input#checkbox {
+    display: none;
+  }
+  input#checkbox[type="checkbox"]:checked ~ nav.nav-mobile {
+    transition: 0.5s;
+    display: block;
+  }
+  .nav-mobile {
+    z-index: 5;
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 2px 2px 5px black;
+    .nav-menu {
+      .menu {
+        .menu-item {
+          width: 100%;
+          border-top: 1px solid rgba(128, 128, 128, 0.5);
+          border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+          text-align: left;
+          padding: 20px;
+          cursor: pointer;
+          &:hover {
+            color: $background-color-main;
+          }
+          .menu-link {
+            width: 100%;
+            font-weight: 500;
+          }
+        }
+        .register-item {
+          width: 100%;
+          text-align: right;
+          border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+          padding: 20px;
+          .menu-link {
+            width: 100%;
+            padding: 10px 20px;
+            font-weight: 500;
+            background-color: $background-color-main;
+            border-radius: 100px;
+            transition: 0.5s;
+            border-bottom: 0px;
+            color: white;
+            &:hover {
+              transition: 0.5s;
+              background-color: white;
+              color: $background-color-main;
+              border-bottom: 0px;
+              box-shadow: 1px 1px 3px $background-color-main;
+              opacity: 0.9;
+            }
+          }
+        }
+      }
     }
   }
 }

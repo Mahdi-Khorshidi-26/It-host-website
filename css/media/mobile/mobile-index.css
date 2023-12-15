@@ -1,1 +1,97 @@
-/*# sourceMappingURL=mobile-index.css.map */
+@media (max-width: 480px) {
+  .header .container .nav .nav-menu {
+    display: none;
+  }
+  .header .container .nav .hamberger-menu {
+    display: block;
+  }
+  .header {
+    position: relative;
+  }
+  .header .fa-bars {
+    display: block;
+  }
+  .header input#checkbox[type=checkbox]:checked + nav.nav-mobile {
+    display: block;
+    animation-name: menu-down;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+  }
+  .header .nav-mobile {
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    box-shadow: 2px 2px 5px black;
+    z-index: 5;
+  }
+  .header .nav-mobile .nav-menu .menu .menu-item {
+    width: 100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    text-align: left;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .header .nav-mobile .nav-menu .menu .menu-item .menu-link {
+    width: 100%;
+    font-weight: 500;
+  }
+  .header .nav-mobile .nav-menu .menu .register-item {
+    width: 100%;
+    text-align: right;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    padding: 20px;
+  }
+  .header .nav-mobile .nav-menu .menu .register-item .menu-link {
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 100px;
+    transition: 0.5s;
+    border-bottom: 0px;
+    color: white;
+  }
+  .header .nav-mobile .nav-menu .menu .register-item .menu-link:hover {
+    transition: 0.5s;
+    background-color: white;
+    border-bottom: 0px;
+    opacity: 0.9;
+  }
+  .header .container-1100 .site-description-header-text .title {
+    color: white;
+    font-size: 4.5rem;
+  }
+  .header .container-1100 .site-description-header-text .paragraph-wrapper .paragraph-description {
+    margin: 40px 0px;
+  }
+  @keyframes menu-down {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    25% {
+      height: 25%;
+      opacity: 0.2;
+    }
+    50% {
+      height: auto;
+      opacity: 0.5;
+    }
+    75% {
+      height: auto;
+      opacity: 0.7;
+    }
+    100% {
+      height: auto;
+      opacity: 1;
+    }
+  }
+  .header .nav-mobile {
+    top: 12%;
+  }
+}/*# sourceMappingURL=mobile-index.css.map */

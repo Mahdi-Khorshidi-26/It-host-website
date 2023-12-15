@@ -1,1 +1,11 @@
-/*# sourceMappingURL=tablet.css.map */
+@media (max-width: 480px) {
+  //header
+  @import "global-mobile";
+  .header {
+    .nav-mobile {
+      top: 12%;
+    }
+  }
+  //main
+  //footer
+}
