@@ -1,4 +1,73 @@
 @media (max-width: 768px) {
   // header and footer
   @import "global";
+  // main
+  .main {
+    margin-top: 50px;
+  }
+  // main top title
+  .main-top-title {
+    .logo {
+      width: 24%;
+      padding-left: 70px;
+    }
+  }
+  // main top features
+  .main-top-features {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    .card-features-active {
+      margin-bottom: 0px !important;
+    }
+    .card-features {
+      .icon-features-active {
+        font-size: 30px;
+      }
+    }
+  }
+  // main middle
+  .main-middle-services {
+    grid-template-columns: repeat(2, 1fr);
+    .section {
+      .btn-wrapper {
+        grid-template-columns: repeat(6, 1fr);
+        .btn {
+          grid-column: span 4;
+        }
+      }
+    }
+    .section-1,
+    .section-2 {
+      padding: 150px 40px;
+    }
+    .section-3 {
+      grid-column: 1/-1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px;
+    }
+  }
+  // main bottom
+  .main-bottom-wrapper {
+    padding-inline: 40px;
+    .btn {
+      display: grid;
+      grid-template-columns: 1fr 90px;
+      padding: 14px;
+      font-size: 16px;
+      .sign {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+      }
+    }
+    .detail {
+      grid-template-columns: 1fr;
+      padding: 20px;
+      align-items: center;
+      justify-items: start;
+    }
+  }
 }
