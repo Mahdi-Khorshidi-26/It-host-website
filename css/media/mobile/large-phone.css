@@ -1,0 +1,25 @@
+@media (max-width: 425px) {
+  .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages {
+    min-height: 400px;
+  }
+  .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages .client .person {
+    position: absolute;
+    left: 95%;
+    top: 100%;
+    transform: translate(-100%, -100%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 5px black;
+  }
+  .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages .client .person img {
+    border-radius: 50%;
+  }
+  .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages .client .client-info {
+    left: 70%;
+    top: 90%;
+  }
+  .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages .client .client-info .client-name {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=large-phone.css.map */

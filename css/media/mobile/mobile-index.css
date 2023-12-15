@@ -133,30 +133,34 @@
     padding: 0px 20px;
   }
   .main-middle-progressbar {
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
   }
-  .main-middle-progressbar .container-1100 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
+  .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages {
+    min-height: 400px;
   }
-  .main-middle-progressbar .container-1100 .slider-wrapper .slide-messages {
-    position: relative;
-  }
-  .main-middle-progressbar .container-1100 .slider-wrapper .slide-messages .client .person {
-    left: 100%;
-    top: 170%;
-  }
-  .main-middle-progressbar .container-1100 .slider-wrapper .slide-messages .client .client-info {
+  .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages .client .person {
     position: absolute;
-    left: 75%;
-    top: 160%;
+    left: 100%;
+    top: 90%;
+    transform: translate(-100%, -100%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 5px black;
   }
-  .main-middle-progressbar .container-1100 .slider-wrapper .slide-messages .client .client-info .client-name {
+  .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages .client .person img {
+    border-radius: 50%;
+  }
+  .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages .client .client-info {
+    left: 78%;
+    top: 80%;
+  }
+  .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages .client .client-info .client-name {
     font-size: 16px;
   }
   .main-bottom-title {
-    margin-top: 250px;
+    margin-top: 50px;
   }
   .main-bottom-title .logo {
     width: 45%;
@@ -227,5 +231,40 @@
   }
   .footer-top .container-1100 .btn {
     width: 40%;
+  }
+  @keyframes move-slider {
+    0% {
+      transform: translateX(0%);
+    }
+    10% {
+      transform: translateX(-111%);
+    }
+    20% {
+      transform: translateX(-111%);
+    }
+    30% {
+      transform: translateX(-111%);
+    }
+    40% {
+      transform: translateX(-111%);
+    }
+    50% {
+      transform: translateX(-222%);
+    }
+    60% {
+      transform: translateX(-222%);
+    }
+    70% {
+      transform: translateX(-222%);
+    }
+    80% {
+      transform: translateX(0%);
+    }
+    90% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 }/*# sourceMappingURL=mobile-index.css.map */
