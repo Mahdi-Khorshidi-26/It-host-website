@@ -112,6 +112,28 @@
       opacity: 1;
     }
   }
+  .main-contact .form-section-contact {
+    margin-bottom: 100px;
+  }
+  .main-contact .form-section-contact .container-1100 {
+    padding: 15px;
+  }
+  .main-contact .form-section-contact .container-1100 .form {
+    margin-top: 65px;
+  }
+  .main-contact .form-section-contact .container-1100 .form .input-row {
+    grid-template-columns: 1fr;
+    padding: 0px;
+  }
+  .main-contact .form-section-contact .container-1100 .form .full-input {
+    padding: 0px;
+  }
+  .main-contact .form-section-contact .container-1100 .form .message-text-area {
+    padding: 0px;
+  }
+  .main-contact .form-section-contact .container-1100 .form .btn {
+    margin-left: 0px;
+  }
   .footer-top {
     display: none;
   }

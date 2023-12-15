@@ -1,7 +1,32 @@
 @media (max-width: 480px) {
-    //header
-    @import "global-mobile";
-    //footer
-    @import "global-footer";
+  //header
+  @import "global-mobile";
+  // main
+  // main form
+  .main-contact {
+    .form-section-contact {
+      margin-bottom: 100px;
+      .container-1100 {
+        padding: 15px;
+        .form {
+          margin-top: 65px;
+          .input-row {
+            grid-template-columns: 1fr;
+            padding: 0px;
+          }
+          .full-input {
+            padding: 0px;
+          }
+          .message-text-area {
+            padding: 0px;
+          }
+          .btn {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
   }
-  
+  //footer
+  @import "global-footer";
+}

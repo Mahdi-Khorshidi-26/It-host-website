@@ -112,6 +112,81 @@
       opacity: 1;
     }
   }
+  .main-middle-form .main-middle-title .logo {
+    width: 7%;
+  }
+  .main-middle-form .form {
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-middle-form .form .website-input {
+    width: 100%;
+  }
+  .main-middle-form .form .btn {
+    width: 60%;
+    padding: 20px 15px;
+  }
+  .middle-post-about-us {
+    padding-inline: 10px;
+  }
+  .middle-info-about-us {
+    background: url("../../../assets/img/background/02.webp") no-repeat top center/cover;
+  }
+  .middle-info-about-us .container-1100 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+  }
+  .middle-info-about-us .row-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .middle-info-about-us .row-1 .description {
+    font-size: 20px;
+    text-align: center;
+  }
+  .middle-info-about-us .row-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 100px;
+  }
+  .middle-top-title-about-us {
+    margin-bottom: 100px;
+  }
+  .middle-top-title-about-us .container-1100 .logo {
+    margin-left: 68px;
+    margin-bottom: 10px;
+  }
+  .middle-top-title-about-us .container-1100 .logo img {
+    width: 30%;
+  }
+  .meet-team-about-us .container-1100 {
+    grid-template-columns: 1fr;
+    padding: 0px;
+  }
+  .client-logos-about-us {
+    min-height: 250px;
+  }
+  .client-logos-about-us .container-1100 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding: 50px;
+    align-items: center;
+    justify-items: flex-start;
+  }
+  .client-logos-about-us .container-1100 .client-logo .logo {
+    margin-right: 3px;
+  }
   .footer-top {
     display: none;
   }

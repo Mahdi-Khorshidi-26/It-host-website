@@ -1,6 +1,44 @@
 @media (max-width: 480px) {
   //header
   @import "global-mobile";
+  //main
+  // main top title
+  .main-top-title {
+    .logo {
+      width: 44%;
+      padding-left: 85px;
+    }
+  }
+  // main top features
+  .main-top-features {
+    grid-template-columns: 1fr;
+  }
+  // main middle
+  .main-middle-services {
+    grid-template-columns: 1fr;
+    .section {
+      .btn-wrapper {
+        grid-template-columns: repeat(6, 1fr);
+        .btn {
+          grid-column: span 3;
+        }
+      }
+    }
+    .section-1,
+    .section-2 {
+      padding: 100px 70px;
+    }
+    .section-3 {
+      padding: 10px;
+    }
+  }
+  // main bottom
+  .main-bottom-wrapper {
+    padding-inline: 20px;
+    .detail {
+      padding: 10px;
+    }
+  }
   //footer
   @import "global-footer";
 }
