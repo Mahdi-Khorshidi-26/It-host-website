@@ -1,4 +1,19 @@
 @media (max-width: 768px) {
   // header and footer
   @import "global";
+  .main-contact {
+    margin-top: 60px;
+  }
+  // main form
+  .main-contact {
+    .form-section-contact {
+      margin-bottom: 60px;
+      .container-1100 {
+        grid-template-areas:
+          "contact-info contact-info contact-info contact-info"
+          "form form form form";
+        padding: 30px;
+      }
+    }
+  }
 }

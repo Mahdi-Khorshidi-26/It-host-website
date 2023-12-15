@@ -101,4 +101,17 @@
     padding-right: 20px;
     width: 100%;
   }
+  .main-news {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .main-news .container-1100 {
+    display: grid;
+    padding: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "post1 post1 post1 post1" "post1 post1 post1 post1" "post1 post1 post1 post1" "post1 post1 post1 post1" "post2 post2 post2 post2" "post2 post2 post2 post2" "post2 post2 post2 post2" "post2 post2 post2 post2" "post3 post3 post3 post3" "post3 post3 post3 post3" "post3 post3 post3 post3" "post3 post3 post3 post3" "side1 side1 side5 side5" "side1 side1 side5 side5" "side1 side1 side5 side5" "side2 side2 side2 side2" "side2 side2 side2 side2" "side2 side2 side2 side2" "side3 side3 side3 side3" "side3 side3 side3 side3" "side4 side4 side4 side4" "side4 side4 side4 side4";
+  }
+  .pagination {
+    padding: 25px;
+  }
 }/*# sourceMappingURL=tablet-news.css.map */
