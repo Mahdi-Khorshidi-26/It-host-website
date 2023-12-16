@@ -67,6 +67,33 @@
   }
 }
 // main bottom
+@mixin detail-style() {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding: 80px;
+  .section-left {
+    .title {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .text {
+      margin-top: 30px;
+      color: #333;
+      opacity: 0.75;
+      line-height: 1.7;
+    }
+  }
+  .section-right {
+    border-radius: 10px;
+    img {
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px black;
+    }
+  }
+}
 .main-bottom-wrapper {
   margin-bottom: 100px;
   .btn {
@@ -83,9 +110,20 @@
       rgb(19, 9, 51) 100%
     );
     font-size: 18px;
-    .sign {
-      font-weight: 700;
+    position: relative;
+    &::after {
+      content: "+";
+      font-weight: 900;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 98%;
+      transform: translate(-150%, -50%);
+      font-size: 18px;
     }
+  }
+  input {
+    display: none;
   }
   .last-btn {
     background: linear-gradient(
@@ -97,30 +135,98 @@
     );
   }
   .detail {
-    margin-top: 20px;
-    margin-bottom: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-    padding: 80px;
-    .section-left {
-      .title {
-        font-size: 25px;
-        font-weight: 600;
-      }
-      .text {
-        margin-top: 30px;
-        color: #333;
-        opacity: 0.75;
-        line-height: 1.7;
-      }
-    }
-    .section-right {
-      border-radius: 10px;
-      img {
-        border-radius: 10px;
-        box-shadow: 2px 2px 5px black;
-      }
-    }
+    display: none;
+  }
+  input#detail-1:checked ~ div.detail-1 {
+    @include detail-style();
+  }
+  input#detail-1:checked + label.btn-1 {
+    background: linear-gradient(
+      to right,
+      #eb2b63,
+      #eb2b63 50%,
+      #eb2b63 75%,
+      #eb2b63 100%
+    );
+  }
+  input#detail-1:checked + label.btn::after {
+    content: "-";
+  }
+  input#detail-2:checked ~ div.detail-2 {
+    @include detail-style();
+  }
+  input#detail-2:checked + label.btn-2 {
+    background: linear-gradient(
+      to right,
+      #eb2b63,
+      #eb2b63 50%,
+      #eb2b63 75%,
+      #eb2b63 100%
+    );
+  }
+  input#detail-2:checked + label.btn::after {
+    content: "-";
+  }
+  input#detail-3:checked ~ div.detail-3 {
+    @include detail-style();
+  }
+  input#detail-3:checked + label.btn-3 {
+    background: linear-gradient(
+      to right,
+      #eb2b63,
+      #eb2b63 50%,
+      #eb2b63 75%,
+      #eb2b63 100%
+    );
+  }
+  input#detail-3:checked + label.btn::after {
+    content: "-";
+  }
+  input#detail-4:checked ~ div.detail-4 {
+    @include detail-style();
+  }
+  input#detail-4:checked + label.btn-4 {
+    background: linear-gradient(
+      to right,
+      #eb2b63,
+      #eb2b63 50%,
+      #eb2b63 75%,
+      #eb2b63 100%
+    );
+  }
+  input#detail-4:checked + label.btn::after {
+    content: "-";
+  }
+}
+
+.animate-open {
+  animation-name: collapse-button-animated;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes collapse-button-animated {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  25% {
+    opacity: 0.25;
+    transform: translateY(-75px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-50px);
+  }
+  75% {
+    opacity: 0.75;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

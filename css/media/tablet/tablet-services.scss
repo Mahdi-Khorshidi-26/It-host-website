@@ -26,26 +26,23 @@
     }
   }
   // main middle
-  .main-middle-services {
-    grid-template-columns: repeat(2, 1fr);
-    .section {
-      .btn-wrapper {
-        grid-template-columns: repeat(6, 1fr);
-        .btn {
-          grid-column: span 4;
-        }
-      }
+  // main bottom
+  @mixin detail-style() {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .main-bottom-wrapper {
+    input#detail-1:checked ~ div.detail-1 {
+      @include detail-style();
     }
-    .section-1,
-    .section-2 {
-      padding: 150px 40px;
+    input#detail-2:checked ~ div.detail-2 {
+      @include detail-style();
     }
-    .section-3 {
-      grid-column: 1/-1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 100px;
+    input#detail-3:checked ~ div.detail-3 {
+      @include detail-style();
+    }
+    input#detail-4:checked ~ div.detail-4 {
+      @include detail-style();
     }
   }
   // main bottom
