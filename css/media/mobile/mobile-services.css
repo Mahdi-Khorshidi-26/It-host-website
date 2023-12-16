@@ -119,6 +119,22 @@
   .main-top-features {
     grid-template-columns: 1fr;
   }
+  .main-middle-services {
+    grid-template-columns: 1fr;
+  }
+  .main-middle-services .section .btn-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .main-middle-services .section .btn-wrapper .btn {
+    grid-column: span 3;
+  }
+  .main-middle-services .section-1,
+  .main-middle-services .section-2 {
+    padding: 100px 70px;
+  }
+  .main-middle-services .section-3 {
+    padding: 10px;
+  }
   .main-bottom-wrapper {
     padding-inline: 20px;
   }
