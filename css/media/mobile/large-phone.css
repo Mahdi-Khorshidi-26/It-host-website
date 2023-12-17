@@ -1,4 +1,57 @@
 @media (max-width: 425px) {
+  .header .container-1100 .site-description-header-text .title {
+    margin-top: 50px;
+    font-size: 2.5rem;
+  }
+  .header .container-1100 .site-description-header-text .paragraph-wrapper .paragraph-description {
+    line-height: 1.7;
+    font-size: 20px;
+  }
+  .main-top-title .logo {
+    width: 44%;
+    padding-left: 85px;
+  }
+  .main-top-title .description .features {
+    font-size: 40px;
+  }
+  .main-top-features {
+    grid-template-columns: 1fr;
+  }
+  .main-middle-form .main-middle-title .logo {
+    width: 7%;
+  }
+  .main-middle-form .main-middle-title .description .features {
+    font-size: 40px;
+  }
+  .main-middle-form .form {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .main-middle-form .form .btn {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    margin-inline: 70px;
+  }
+  .main-middle-form .paragraph-wrapper {
+    padding: 0px 20px;
+  }
+  .main-middle-form .paragraph-wrapper .paragraph-description {
+    font-size: 12px;
+    padding-bottom: 100px;
+  }
+  .main-bottom-title {
+    margin-top: 50px;
+  }
+  .main-bottom-title .logo {
+    width: 45%;
+  }
+  .main-bottom-title .description .features {
+    font-size: 40px;
+  }
+  .main-selling-plans .container-1100 .plans {
+    padding-inline: 15px;
+  }
   .main-middle-progressbar .container-1100 .slider-wrapper .wrapper .slide-messages {
     min-height: 400px;
   }

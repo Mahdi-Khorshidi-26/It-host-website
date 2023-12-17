@@ -1,0 +1,207 @@
+@media (max-width: 375px) {
+  // header
+  .header {
+    .container-1100 {
+      .site-description-header-text {
+        .title {
+          font-size: 3rem;
+        }
+        .paragraph-wrapper {
+          .paragraph-description {
+            line-height: 1.7;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  // main middle progressbar
+  .main-middle-progressbar {
+    .container-1100 {
+      .slider-wrapper {
+        .wrapper {
+          .slide-messages {
+            min-height: 500px;
+            width: 100%;
+            .client {
+              .person {
+                position: absolute;
+                left: 95%;
+                top: 100%;
+                transform: translate(-100%, -100%);
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                box-shadow: 1px 1px 5px black;
+                img {
+                  border-radius: 50%;
+                }
+              }
+              .client-info {
+                .client-name {
+                  font-size: 13px;
+                }
+                left: 65%;
+                top: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // footer middle
+  .footer-middle {
+    .container-1100 {
+      grid-template-areas:
+        "it-host it-host it-host"
+        "usefull-link  usefull-link empty"
+        "latest-posts  latest-posts latest-posts";
+      .section-3 {
+        .comment-post {
+          .post-img {
+            width: 18%;
+            height: 18%;
+          }
+          .description {
+            .text {
+              font-size: 16px;
+              margin-bottom: 7px;
+            }
+            .time {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // footer bottom
+  .footer-bottom {
+    min-height: 130px;
+    .container-1100 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "menu menu"
+        "copyright copyright";
+      height: 130px;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+      .copyright {
+        grid-area: copyright;
+        padding: 25px;
+        padding-top: 5px;
+        font-size: 15px;
+      }
+      .footer-menu {
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+      }
+    }
+  }
+  @keyframes move-slider {
+    0% {
+      transform: translateX(0%);
+    }
+    10% {
+      transform: translateX(-115%);
+    }
+    20% {
+      transform: translateX(-115%);
+    }
+    30% {
+      transform: translateX(-115%);
+    }
+    40% {
+      transform: translateX(-115%);
+    }
+    50% {
+      transform: translateX(-230%);
+    }
+    60% {
+      transform: translateX(-230%);
+    }
+    70% {
+      transform: translateX(-230%);
+    }
+    80% {
+      transform: translateX(0%);
+    }
+    90% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  //main
+  // main top title
+  .main-top-title {
+    .logo {
+      width: 64%;
+      padding-left: 85px;
+    }
+  }
+  // main middle form
+  .main-middle-form {
+    .main-middle-title {
+      .logo {
+        width: 9%;
+      }
+    }
+  }
+  // main middle title
+  .main-bottom-title {
+    margin-top: 50px;
+    .logo {
+      width: 50%;
+    }
+  }
+  // main middle progressbar
+  .main-middle-progressbar {
+    .container-1100 {
+      padding: 10px;
+      .slider-wrapper {
+        .wrapper {
+          .slide-messages {
+            min-height: 600px;
+            width: 100%;
+            .client {
+              .person {
+                left: 95%;
+                top: 100%;
+              }
+              .client-info {
+                .client-name {
+                  font-size: 13px;
+                }
+                left: 65%;
+                top: 90%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // footer bottom
+  .footer-bottom {
+    min-height: 130px;
+    .container-1100 {
+      min-height: 130px;
+      .copyright {
+        font-size: 13px;
+      }
+      .footer-menu {
+        font-size: 12px;
+      }
+    }
+  }
+}

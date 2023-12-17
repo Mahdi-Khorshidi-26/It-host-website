@@ -1,4 +1,88 @@
 @media (max-width: 425px) {
+  // header
+  .header {
+    .container-1100 {
+      .site-description-header-text {
+        .title {
+          margin-top: 50px;
+          font-size: 2.5rem;
+        }
+        .paragraph-wrapper {
+          .paragraph-description {
+            line-height: 1.7;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  //main
+  // main top title
+  .main-top-title {
+    .logo {
+      width: 44%;
+      padding-left: 85px;
+    }
+    .description {
+      .features {
+        font-size: 40px;
+      }
+    }
+  }
+  // main top features
+  .main-top-features {
+    grid-template-columns: 1fr;
+  }
+  // main middle form
+  .main-middle-form {
+    .main-middle-title {
+      .logo {
+        width: 7%;
+      }
+      .description {
+        .features {
+          font-size: 40px;
+        }
+      }
+    }
+    .form {
+      grid-template-columns: 1fr;
+      padding: 20px;
+      .btn {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 20px;
+        margin-inline: 70px;
+      }
+    }
+    .paragraph-wrapper {
+      padding: 0px 20px;
+      .paragraph-description {
+        font-size: 12px;
+        padding-bottom: 100px;
+      }
+    }
+  }
+  // main middle title
+  .main-bottom-title {
+    margin-top: 50px;
+    .logo {
+      width: 45%;
+    }
+    .description {
+      .features {
+        font-size: 40px;
+      }
+    }
+  }
+  // main selling plans
+  .main-selling-plans {
+    .container-1100 {
+      .plans {
+        padding-inline: 15px;
+      }
+    }
+  }
   // main middle progressbar
   .main-middle-progressbar {
     .container-1100 {

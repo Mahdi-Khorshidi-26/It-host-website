@@ -1,0 +1,64 @@
+@media (max-width: 375px) {
+  .header .container-1100 .site-description-header-text .title {
+    font-size: 3rem;
+  }
+  .header .container-1100 .site-description-header-text .paragraph-wrapper .paragraph-description {
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  .main-news .container-1100 {
+    grid-template-areas: "post1 post1 post1 post1" "post1 post1 post1 post1" "post1 post1 post1 post1" "post1 post1 post1 post1" "post2 post2 post2 post2" "post2 post2 post2 post2" "post2 post2 post2 post2" "post2 post2 post2 post2" "post3 post3 post3 post3" "post3 post3 post3 post3" "post3 post3 post3 post3" "post3 post3 post3 post3" "side1 side1 side1 side1" "side1 side1 side1 side1" "side1 side1 side1 side1" "side2 side2 side2 side2" "side2 side2 side2 side2" "side2 side2 side2 side2" "side3 side3 side3 side3" "side3 side3 side3 side3" "side4 side4 side4 side4" "side4 side4 side4 side4";
+  }
+  .footer-middle .container-1100 {
+    grid-template-areas: "it-host it-host it-host" "usefull-link  usefull-link empty" "latest-posts  latest-posts latest-posts";
+  }
+  .footer-middle .container-1100 .section-3 .comment-post .post-img {
+    width: 18%;
+    height: 18%;
+  }
+  .footer-middle .container-1100 .section-3 .comment-post .description .text {
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  .footer-middle .container-1100 .section-3 .comment-post .description .time {
+    font-size: 15px;
+  }
+  .footer-bottom {
+    min-height: 130px;
+  }
+  .footer-bottom .container-1100 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "menu menu" "copyright copyright";
+    height: 130px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .footer-bottom .container-1100 .copyright {
+    grid-area: copyright;
+    padding: 25px;
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  .footer-bottom .container-1100 .footer-menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .footer-bottom {
+    min-height: 130px;
+  }
+  .footer-bottom .container-1100 {
+    min-height: 130px;
+  }
+  .footer-bottom .container-1100 .copyright {
+    font-size: 13px;
+  }
+  .footer-bottom .container-1100 .footer-menu {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=news-small.css.map */
